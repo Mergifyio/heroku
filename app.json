@@ -1,0 +1,24 @@
+{
+  "name": "Mergify",
+  "description": "We make your code merge faster",
+  "repository": "https://github.com/sileht/mergify-engine",
+  "website": "https://mergify.io",
+  "logo": "https://raw.githubusercontent.com/Mergifyio/mergify-engine/master/docs/source/_static/logo.png",
+  "success_url": "/index.html",
+  "keywords": ["automerge", "python", "github", "pullrequest"],
+  "stack": "container",
+  "formation": {
+    "web": {
+      "quantity": 1
+    },
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    {
+      "plan": "rediscloud:30",
+      "as": "MERGIFYENGINE_STORAGE"
+    }
+  ]
+}
