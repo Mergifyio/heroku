@@ -1,2 +1,2 @@
-FROM mergifyio/heroku:dev
+FROM mergifyio/engine:latest
 ENTRYPOINT []
